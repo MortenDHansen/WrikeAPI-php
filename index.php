@@ -4,12 +4,12 @@
     $api = new wrikeapi();
     // Look to the api_handler.php - method token_init can help you make the access token.
     // you should be able to recieve the token.
-    $access_token = 'oHjAySOkzBJuLkLcvBWEIMonDzYITKlTTSeXNZZuIy7sohmn0NdzzOUhq0AnZDgR-N-N';
+    $access_token = '<the access token you got>';
 ?>
 <!DOCTYPE html>
 <!--
  Morten D. Hansen
- 2015 mdh@skyadsmedia.com
+ 2015 morten@visia.dk
 -->
 <html>
     <head>

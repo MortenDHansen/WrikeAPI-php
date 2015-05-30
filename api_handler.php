@@ -7,11 +7,11 @@ if(!defined('angus')) {
 class Wrikeapi
 {
     // Set the the auth credentials obtained from wrike
-    private $client_id = 'ADnZquor';
-    private $client_secret = 'BfWIsdDyJ3s4AEX1LQqOmYh86AiyzDwFqe3UhzhfQgd9ZqmPcYpxgpaR5xqXqtpm';
-    private $code = 'MUZzoGANkuFaO2J00lWBczB78zxc9fbIXR1TMO1bwlvMq4qpvCMWRB3lUJY0ShpS-N'; // when you agree to give acces through the api, you get this code.
-    private $refresh_token = 'joJ8KDnQiXkLt2VEY83Ch7mF5s9Jb6O5xjGglMzhA2Hy4xkKc5Hm3wHjtmoMRYkz-A-N';
-    private $api_url = 'https://www.wrike.com/api/v3';
+    private $client_id = '<client id>';
+    private $client_secret = '<shhh... its a secret!>';
+    private $code = '<code>'; // when you agree to give acces through the api, you get this code.
+    private $refresh_token = '<token for refreshing .. the token>';
+    private $api_url = 'https://www.wrike.com/api/v3'; // the url of the api
     // recieve the token
     
     /*
@@ -28,7 +28,7 @@ class Wrikeapi
             );
         $token = $this->curl_post($url, $fields);
         $token = json_decode($token);
-        echo "note: This should only be run ONCE for your application. From here on, only REFRESH - asking for a new one will require you to update the authorization_code";
+        echo "note: This should only be run ONCE for your application. From here on, only REFRESH - because asking for a new one will require you to update the authorization_code";
         return $token; // be sure to keep the refresh token handy (comes with the json).
     }
 
