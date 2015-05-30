@@ -9,3 +9,4 @@ You need to fetch the tokens needed. That means:
 2. Use your client ID from the email to get a token (visit this url: https://www.wrike.com/oauth2/authorize?response_type=code&client_id=<client_id> )
 3. Run the token_init() method from the library using your new token.
 
+Then all is in place, and you are ready to use wrike API as part of the application you are building. 
